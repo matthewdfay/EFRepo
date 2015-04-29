@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainPageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#000000">
+
+    <com.elementalfoundry.tapclips.TCVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/playPauseButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_play"
+        android:scaleType="centerCrop"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:id="@+id/slidePageTopControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+        <!-- here to help layout -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backToCameraLayoutHelper"
+            android:src="@drawable/icon_camera"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_weight="0"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"/>
+        <FrameLayout
+            android:id="@+id/scrubContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            >
+        </FrameLayout>
+        <TextView
+            android:id="@+id/clipLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:04"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/updatingClip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Updating Clip..."
+        android:textSize="22dp"
+        android:visibility="invisible"
+        android:textColor="#FFFFFF"
+        />
+</RelativeLayout>

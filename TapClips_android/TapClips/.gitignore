@@ -1,0 +1,8 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+tapclips/build/
+facebook/build/
+build/
+/tapclips/*.apk
+.DS_Store

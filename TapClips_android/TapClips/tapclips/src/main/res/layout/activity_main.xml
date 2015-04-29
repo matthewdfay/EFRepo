@@ -1,0 +1,235 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.elementalfoundry.tapclips.MainActivity">
+
+    <com.elementalfoundry.tapclips.FixedAspectRatioFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.opengl.GLSurfaceView
+                android:id="@+id/cameraPreview_surfaceView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center">
+            </android.opengl.GLSurfaceView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/liveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="LIVE"
+            android:textColor="#C83B40"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/shutter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shutter_stop"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/firstTimeShutter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shutter"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/firstTimeShutterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to save last 0 seconds"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+        <ProgressBar
+            android:id="@+id/uploadingProgress"
+            style="@android:style/Widget.Holo.Light.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:visibility="invisible"
+            />
+
+        <FrameLayout
+            android:id="@+id/cameraFlash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="invisible"></FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/thumbViewer"
+            android:layout_width="600dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:visibility="invisible">
+            <ImageView
+                android:id="@+id/thumb1"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <ImageView
+                android:id="@+id/thumb2"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <ImageView
+                android:id="@+id/thumb3"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <ImageView
+                android:id="@+id/thumb4"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/previewContainer"
+            android:layout_width="130dp"
+            android:layout_height="86dp"
+            android:layout_gravity="right|bottom"/>
+
+        <FrameLayout
+            android:id="@+id/mainClickBlocker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+            <LinearLayout
+                android:id="@+id/rightButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clipsButton"
+                    android:src="@drawable/icon_folder"
+                    android:scaleType="centerCrop"
+                    android:background="@null"/>
+                <ImageButton
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exploreButton"
+                    android:src="@drawable/icon_tapclips"
+                    android:scaleType="centerCrop"
+                    android:background="@null"/>
+                <ImageButton
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settingsButton"
+                    android:src="@drawable/icon_settings"
+                    android:scaleType="centerCrop"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/drawerContents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000"
+                android:layout_weight="1">
+                <FrameLayout
+                    android:id="@+id/settingsFragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></FrameLayout>
+                <FrameLayout
+                    android:id="@+id/clipsFragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></FrameLayout>
+                <LinearLayout
+                    android:id="@+id/exploreContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+                    <include layout="@layout/fragment_drawer_title"/>
+                    <WebView
+                        android:id="@+id/exploreWebView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        ></WebView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/clipViewerFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/termsAndConditionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/movingClipsToCameraRoll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="Moving clips to Camera Roll..."
+                android:textSize="20dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/linkingInProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000"
+            android:visibility="invisible">
+            <ProgressBar
+                style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+    </com.elementalfoundry.tapclips.FixedAspectRatioFrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mainActivityWebViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</FrameLayout>

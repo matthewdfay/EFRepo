@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aws-android-sdk-1.7.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tapclips/libs/aws-android-sdk-1.7.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
