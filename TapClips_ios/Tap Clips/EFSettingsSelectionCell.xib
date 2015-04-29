@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="settingsSelectionCell" id="hZj-Yt-VRU" customClass="EFSettingsSelectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hZj-Yt-VRU" id="iv7-9K-btV">
+                <rect key="frame" x="0.0" y="0.0" width="568" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvv-lf-p2t">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vv-nn-Yse">
+                        <rect key="frame" x="50" y="0.0" width="473" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="5Ic-hf-gy5">
+                        <rect key="frame" x="533" y="12" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Ife-Np-slS"/>
+                            <constraint firstAttribute="width" constant="25" id="VTn-je-clU"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dkQ-lu-RdF">
+                        <rect key="frame" x="535" y="15" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="7Lg-In-AaB"/>
+                            <constraint firstAttribute="height" constant="20" id="9SZ-LH-abb"/>
+                        </constraints>
+                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2vv-nn-Yse" secondAttribute="bottom" id="2ab-H3-8bw"/>
+                    <constraint firstAttribute="trailing" secondItem="hvv-lf-p2t" secondAttribute="trailing" id="6qz-Oz-1tS"/>
+                    <constraint firstAttribute="bottom" secondItem="hvv-lf-p2t" secondAttribute="bottom" id="K2I-X9-13Z"/>
+                    <constraint firstItem="2vv-nn-Yse" firstAttribute="top" secondItem="iv7-9K-btV" secondAttribute="top" id="NPf-ZR-aLK"/>
+                    <constraint firstAttribute="centerY" secondItem="dkQ-lu-RdF" secondAttribute="centerY" id="ONW-lP-lCG"/>
+                    <constraint firstItem="2vv-nn-Yse" firstAttribute="leading" secondItem="iv7-9K-btV" secondAttribute="leading" constant="50" id="S0g-rb-Rez"/>
+                    <constraint firstItem="hvv-lf-p2t" firstAttribute="leading" secondItem="iv7-9K-btV" secondAttribute="leading" id="T4I-ht-0Kr"/>
+                    <constraint firstAttribute="trailing" secondItem="dkQ-lu-RdF" secondAttribute="trailing" constant="13" id="UJA-Vq-tFj"/>
+                    <constraint firstAttribute="centerY" secondItem="5Ic-hf-gy5" secondAttribute="centerY" constant="0.5" id="VzZ-wv-ynf"/>
+                    <constraint firstAttribute="trailing" secondItem="5Ic-hf-gy5" secondAttribute="trailing" constant="10" id="eQ8-5l-aAH"/>
+                    <constraint firstItem="5Ic-hf-gy5" firstAttribute="leading" secondItem="2vv-nn-Yse" secondAttribute="trailing" constant="10" id="pXK-ny-3qV"/>
+                    <constraint firstItem="hvv-lf-p2t" firstAttribute="top" secondItem="iv7-9K-btV" secondAttribute="top" id="sKq-I5-Z4X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="dkQ-lu-RdF" id="nhf-uz-x5B"/>
+                <outlet property="settingsBackgroundView" destination="hvv-lf-p2t" id="4ae-xL-7gp"/>
+                <outlet property="settingsBoxImageView" destination="5Ic-hf-gy5" id="zhU-jI-L6O"/>
+                <outlet property="settingsTitleLabel" destination="2vv-nn-Yse" id="Wy9-3a-ynu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-checkbox" width="15" height="16"/>
+    </resources>
+</document>

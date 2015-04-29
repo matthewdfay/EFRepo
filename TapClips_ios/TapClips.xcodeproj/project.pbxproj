@@ -1,0 +1,1350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F168BEB18DB691C00AF93CD /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F168BE518DB691C00AF93CD /* libTestFlight.a */; };
+		1F168BEC18DB691C00AF93CD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F168BE618DB691C00AF93CD /* README.md */; };
+		1F168BED18DB691C00AF93CD /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F168BE718DB691C00AF93CD /* release_notes.md */; };
+		1F168BEF18DB698000AF93CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F168BEE18DB698000AF93CD /* libz.dylib */; };
+		1F2230B1193D3114002A7F33 /* EFReturnAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2230B0193D3114002A7F33 /* EFReturnAction.m */; };
+		1F2230C4193FB51F002A7F33 /* EFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2230C3193FB51F002A7F33 /* EFImage.m */; };
+		1F2230C7193FCEAC002A7F33 /* UIImage+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2230C6193FCEAC002A7F33 /* UIImage+EFExtensions.m */; };
+		1F2230DB1946350F002A7F33 /* EFVideoDateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2230DA1946350F002A7F33 /* EFVideoDateHeaderView.xib */; };
+		1F2230F41948DE94002A7F33 /* EFShareVideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2230F31948DE94002A7F33 /* EFShareVideoCollectionViewCell.m */; };
+		1F2230F91948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2230F81948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.m */; };
+		1F2230FC194A0D3A002A7F33 /* EFSingleSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2230FB194A0D3A002A7F33 /* EFSingleSelectionView.m */; };
+		1F2230FE194A0D4D002A7F33 /* EFSingleSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2230FD194A0D4D002A7F33 /* EFSingleSelectionView.xib */; };
+		1F223107194B63CA002A7F33 /* EFDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F223106194B63CA002A7F33 /* EFDrawerViewController.m */; };
+		1F2231121950A4A2002A7F33 /* EFPostingCompleteFailureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2231111950A4A2002A7F33 /* EFPostingCompleteFailureView.xib */; };
+		1F22311E19523F91002A7F33 /* EFLinkAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F22311D19523F91002A7F33 /* EFLinkAction.m */; };
+		1F223132195398B3002A7F33 /* libFlurry_5.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F223131195398B3002A7F33 /* libFlurry_5.1.0.a */; };
+		1F40A84E1926A8E900D6C364 /* EFOnboardingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A84D1926A8E900D6C364 /* EFOnboardingManager.m */; };
+		1F40A853192A71D300D6C364 /* EFOnboardingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A852192A71D300D6C364 /* EFOnboardingView.m */; };
+		1F40A856192A7B7200D6C364 /* UIColor+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A855192A7B7200D6C364 /* UIColor+EFExtensions.m */; };
+		1F40A8BA192EA24400D6C364 /* EFRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A8B9192EA24400D6C364 /* EFRotationView.m */; };
+		1F40A8BC192EA35900D6C364 /* EFRotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F40A8BB192EA35900D6C364 /* EFRotationView.xib */; };
+		1F40A8CA193503C600D6C364 /* EFExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A8C9193503C600D6C364 /* EFExploreViewController.m */; };
+		1F40A8E11936902400D6C364 /* EFProtocolLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A8E01936902400D6C364 /* EFProtocolLauncher.m */; };
+		1F40A8E41936913B00D6C364 /* EFProtocolAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A8E31936913B00D6C364 /* EFProtocolAction.m */; };
+		1F40A8E71936932E00D6C364 /* EFLaunchPageAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F40A8E61936932E00D6C364 /* EFLaunchPageAction.m */; };
+		1F5539461905C3E3003881B5 /* EFTimeFillLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5539451905C3E3003881B5 /* EFTimeFillLayer.m */; };
+		1F55394E1907147F003881B5 /* EFZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F55394D1907147F003881B5 /* EFZoomView.m */; };
+		1F55395B190975B0003881B5 /* EFVideoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F55395A190975B0003881B5 /* EFVideoPreviewView.m */; };
+		1F55396119097CFE003881B5 /* EFVideoPreviewView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F55396019097CFE003881B5 /* EFVideoPreviewView~iphone.xib */; };
+		1F55396519097D98003881B5 /* EFVideoPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F55396419097D98003881B5 /* EFVideoPreviewCollectionViewCell.m */; };
+		1F55396719097DA9003881B5 /* EFVideoPreviewCollectionViewCell~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F55396619097DA9003881B5 /* EFVideoPreviewCollectionViewCell~iphone.xib */; };
+		1F5539701909D8C4003881B5 /* EFVideoPreviewView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F55396F1909D8C4003881B5 /* EFVideoPreviewView~ipad.xib */; };
+		1F5539721909D97A003881B5 /* EFVideoPreviewCollectionViewCell~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5539711909D97A003881B5 /* EFVideoPreviewCollectionViewCell~ipad.xib */; };
+		1F5A910218DB945B000BD73F /* EFUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A910118DB945B000BD73F /* EFUploadManager.m */; };
+		1F5A910618DB96C0000BD73F /* EFReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A910518DB96C0000BD73F /* EFReachability.m */; };
+		1F5A910B18DB9AAB000BD73F /* UIApplication+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A910A18DB9AAB000BD73F /* UIApplication+EFExtensions.m */; };
+		1F5A910E18DB9AF1000BD73F /* NSDate+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A910D18DB9AF1000BD73F /* NSDate+EFExtensions.m */; };
+		1F5A911418DBA0E7000BD73F /* EFVideoUploadGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A911318DBA0E7000BD73F /* EFVideoUploadGroup.m */; };
+		1F772AD718DCA94400FDD5FE /* EFKeychainStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772AD618DCA94400FDD5FE /* EFKeychainStorage.m */; };
+		1F772ADB18DCAAB500FDD5FE /* EFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772ADA18DCAAB500FDD5FE /* EFUser.m */; };
+		1F772ADF18DCB62800FDD5FE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F772ADE18DCB62800FDD5FE /* FacebookSDK.framework */; };
+		1F772AE718DCBD6200FDD5FE /* EFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772AE618DCBD6200FDD5FE /* EFSettingsViewController.m */; };
+		1F772AEA18DCDFA800FDD5FE /* NSFileManager+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772AE918DCDFA800FDD5FE /* NSFileManager+EFExtensions.m */; };
+		1F772AEF18DCFB2B00FDD5FE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F772AEE18DCFB2B00FDD5FE /* Social.framework */; };
+		1F772AF318DCFEFA00FDD5FE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F772AF218DCFEFA00FDD5FE /* Accounts.framework */; };
+		1F772AFB18E1E92300FDD5FE /* EFTwitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772AFA18E1E92300FDD5FE /* EFTwitterManager.m */; };
+		1F772B0018E1F01400FDD5FE /* EFTwitterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772AFF18E1F01400FDD5FE /* EFTwitterRequest.m */; };
+		1F772B0318E1F64500FDD5FE /* NSString+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B0218E1F64500FDD5FE /* NSString+EFExtensions.m */; };
+		1F772B0918E1FB6800FDD5FE /* NSData+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B0818E1FB6800FDD5FE /* NSData+EFExtensions.m */; };
+		1F772B1318E2569400FDD5FE /* EFSemiTransparentModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B1218E2569400FDD5FE /* EFSemiTransparentModalView.m */; };
+		1F772B1718E332D700FDD5FE /* EFSingleSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B1618E332D700FDD5FE /* EFSingleSelectionCell.m */; };
+		1F772B1A18E3343D00FDD5FE /* EFMoreSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B1918E3343D00FDD5FE /* EFMoreSelectionCell.m */; };
+		1F772B1E18E3392D00FDD5FE /* EFSemiTransparentModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B1D18E3392D00FDD5FE /* EFSemiTransparentModalViewController.m */; };
+		1F772B2418E33AC400FDD5FE /* UIStoryboard+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B2318E33AC400FDD5FE /* UIStoryboard+EFExtensions.m */; };
+		1F772B2F18E37A3D00FDD5FE /* EFCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B2E18E37A3D00FDD5FE /* EFCameraManager.m */; };
+		1F772B3B18E4930300FDD5FE /* EFMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B3A18E4930300FDD5FE /* EFMediaManager.m */; };
+		1F772B4B18E6430E00FDD5FE /* EFAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B4A18E6430E00FDD5FE /* EFAPIClient.m */; };
+		1F772B5018E6433600FDD5FE /* EFNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B4F18E6433600FDD5FE /* EFNetworkRequest.m */; };
+		1F772B5618E6483800FDD5FE /* NSDictionary+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B5518E6483800FDD5FE /* NSDictionary+EFExtensions.m */; };
+		1F772B5918E6487D00FDD5FE /* UIAlertView+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B5818E6487D00FDD5FE /* UIAlertView+EFExtensions.m */; };
+		1F772B6718E9FEB200FDD5FE /* EFSettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B6618E9FEB200FDD5FE /* EFSettingsManager.m */; };
+		1F772B6C18E9FF2A00FDD5FE /* EFCachedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B6B18E9FF2A00FDD5FE /* EFCachedManager.m */; };
+		1F772B7018EA207F00FDD5FE /* EFCachingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B6F18EA207F00FDD5FE /* EFCachingManager.m */; };
+		1F772B8518EC646200FDD5FE /* UIViewController+EFExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B8418EC646100FDD5FE /* UIViewController+EFExtensions.m */; };
+		1F772B8B18EC7EAA00FDD5FE /* EFSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B8A18EC7EAA00FDD5FE /* EFSettingsCell.m */; };
+		1F772B9118ECCA8400FDD5FE /* EFSettingsHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B9018ECCA8400FDD5FE /* EFSettingsHeaderCell.m */; };
+		1F772B9818EE143900FDD5FE /* EFSettingsSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772B9718EE143900FDD5FE /* EFSettingsSelectionCell.m */; };
+		1F772BC118F49B5400FDD5FE /* EFVideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BC018F49B5400FDD5FE /* EFVideoDetailViewController.m */; };
+		1F772BC818F4AB1600FDD5FE /* EFVideoDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BC718F4AB1600FDD5FE /* EFVideoDetailCell.m */; };
+		1F772BD018F4B21400FDD5FE /* EFVideoDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BCB18F4B21400FDD5FE /* EFVideoDateHeaderView.m */; };
+		1F772BD118F4B21400FDD5FE /* EFVideoRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BCD18F4B21400FDD5FE /* EFVideoRowCell.m */; };
+		1F772BD218F4B21400FDD5FE /* EFVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BCF18F4B21400FDD5FE /* EFVideosViewController.m */; };
+		1F772BD718F4B76400FDD5FE /* EFLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BD618F4B76400FDD5FE /* EFLocationManager.m */; };
+		1F772BD918F5A96400FDD5FE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F772BD818F5A96400FDD5FE /* MediaPlayer.framework */; };
+		1F772BE118F8695E00FDD5FE /* EFWindowPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BE018F8695E00FDD5FE /* EFWindowPresenter.m */; };
+		1F772BEE18FC47E700FDD5FE /* EFShareVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BED18FC47E700FDD5FE /* EFShareVideoViewController.m */; };
+		1F772BF018FC539700FDD5FE /* EFSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F772BEF18FC539700FDD5FE /* EFSettingsCell.xib */; };
+		1F772BF218FC556200FDD5FE /* EFSettingsSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F772BF118FC556200FDD5FE /* EFSettingsSelectionCell.xib */; };
+		1F772BFB18FF038400FDD5FE /* EFPostingCompleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772BFA18FF038400FDD5FE /* EFPostingCompleteView.m */; };
+		1F772BFF18FF039B00FDD5FE /* EFPostingCompleteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F772BFE18FF039B00FDD5FE /* EFPostingCompleteView.xib */; };
+		1F772C081900455700FDD5FE /* EFTimeSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772C071900455700FDD5FE /* EFTimeSliderView.m */; };
+		1F772C1019009AE800FDD5FE /* EFTimeTrackingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F772C0F19009AE800FDD5FE /* EFTimeTrackingView.m */; };
+		1F9C8E7F1958EF480065483C /* NSRegularExpression+EFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C8E7E1958EF480065483C /* NSRegularExpression+EFExtension.m */; };
+		1FB91120190AD5D300FEFFB8 /* EFTouchThroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9111F190AD5D300FEFFB8 /* EFTouchThroughView.m */; };
+		1FB91130190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9112F190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.m */; };
+		1FB91133190EF02B00FEFFB8 /* EFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB91132190EF02B00FEFFB8 /* EFWebViewController.m */; };
+		1FB91143191168FD00FEFFB8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB91140191168FD00FEFFB8 /* Default-568h@2x.png */; };
+		1FB91145191168FD00FEFFB8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB91142191168FD00FEFFB8 /* Default@2x.png */; };
+		1FB9114A1912BAB200FEFFB8 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB911481912BAB200FEFFB8 /* Default-Landscape.png */; };
+		1FB9114B1912BAB200FEFFB8 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB911491912BAB200FEFFB8 /* Default-Landscape@2x.png */; };
+		1FB911FC1914241200FEFFB8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB911FB1914241200FEFFB8 /* SystemConfiguration.framework */; };
+		1FB911FE1914242400FEFFB8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB911FD1914242400FEFFB8 /* Security.framework */; };
+		1FB9120A191D523500FEFFB8 /* EFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB91209191D523500FEFFB8 /* EFLoadingView.m */; };
+		1FB9121A1923E15C00FEFFB8 /* EFPostingCompleteViewCameraRoll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB912191923E15C00FEFFB8 /* EFPostingCompleteViewCameraRoll.xib */; };
+		1FB9121D19241AE300FEFFB8 /* EFSendVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9121C19241AE300FEFFB8 /* EFSendVideoViewController.m */; };
+		1FEB065118DA343200821F2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB065018DA343200821F2F /* Foundation.framework */; };
+		1FEB065318DA343200821F2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB065218DA343200821F2F /* CoreGraphics.framework */; };
+		1FEB065518DA343200821F2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB065418DA343200821F2F /* UIKit.framework */; };
+		1FEB065B18DA343200821F2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB065918DA343200821F2F /* InfoPlist.strings */; };
+		1FEB065D18DA343200821F2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB065C18DA343200821F2F /* main.m */; };
+		1FEB066118DA343200821F2F /* EFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB066018DA343200821F2F /* EFAppDelegate.m */; };
+		1FEB066418DA343200821F2F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB066218DA343200821F2F /* Main_iPhone.storyboard */; };
+		1FEB066718DA343200821F2F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB066518DA343200821F2F /* Main_iPad.storyboard */; };
+		1FEB066A18DA343200821F2F /* EFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB066918DA343200821F2F /* EFRootViewController.m */; };
+		1FEB066C18DA343200821F2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB066B18DA343200821F2F /* Images.xcassets */; };
+		1FEB067418DA343200821F2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB065018DA343200821F2F /* Foundation.framework */; };
+		1FEB067518DA343200821F2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB065418DA343200821F2F /* UIKit.framework */; };
+		1FEB067D18DA343300821F2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB067B18DA343300821F2F /* InfoPlist.strings */; };
+		1FEB067F18DA343300821F2F /* Tap_ClipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB067E18DA343300821F2F /* Tap_ClipsTests.m */; };
+		1FEB068918DA377600821F2F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB068818DA377600821F2F /* CoreMedia.framework */; };
+		1FEB068B18DA377F00821F2F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB068A18DA377F00821F2F /* CoreVideo.framework */; };
+		1FEB068D18DA378A00821F2F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB068C18DA378A00821F2F /* OpenGLES.framework */; };
+		1FEB068F18DA379600821F2F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB068E18DA379600821F2F /* AVFoundation.framework */; };
+		1FEB069118DA37A100821F2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB069018DA37A100821F2F /* QuartzCore.framework */; };
+		1FEB06A118DA3D0E00821F2F /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB069918DA382A00821F2F /* libGPUImage.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		1FEB06A418DA411800821F2F /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB06A218DA411800821F2F /* AWSRuntime.framework */; };
+		1FEB06A518DA411800821F2F /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB06A318DA411800821F2F /* AWSS3.framework */; };
+		1FEB06A718DA450300821F2F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEB06A618DA450300821F2F /* AssetsLibrary.framework */; };
+		1FEB06AA18DA4CA800821F2F /* EFRecordFilterPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB06A918DA4CA800821F2F /* EFRecordFilterPipeline.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F264CFD19D09EFB00144164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEB069218DA382A00821F2F /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		1FEB067618DA343200821F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEB064518DA343200821F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FEB064C18DA343200821F2F;
+			remoteInfo = "Tap Clips";
+		};
+		1FEB069818DA382A00821F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEB069218DA382A00821F2F /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		1FEB069C18DA389E00821F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEB069218DA382A00821F2F /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F168BE518DB691C00AF93CD /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		1F168BE618DB691C00AF93CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1F168BE718DB691C00AF93CD /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		1F168BE818DB691C00AF93CD /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		1F168BE918DB691C00AF93CD /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		1F168BEA18DB691C00AF93CD /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		1F168BEE18DB698000AF93CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1F2230AF193D3114002A7F33 /* EFReturnAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFReturnAction.h; sourceTree = "<group>"; };
+		1F2230B0193D3114002A7F33 /* EFReturnAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFReturnAction.m; sourceTree = "<group>"; };
+		1F2230C2193FB51F002A7F33 /* EFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFImage.h; sourceTree = "<group>"; };
+		1F2230C3193FB51F002A7F33 /* EFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFImage.m; sourceTree = "<group>"; };
+		1F2230C5193FCEAC002A7F33 /* UIImage+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EFExtensions.h"; sourceTree = "<group>"; };
+		1F2230C6193FCEAC002A7F33 /* UIImage+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EFExtensions.m"; sourceTree = "<group>"; };
+		1F2230DA1946350F002A7F33 /* EFVideoDateHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFVideoDateHeaderView.xib; sourceTree = "<group>"; };
+		1F2230F21948DE94002A7F33 /* EFShareVideoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShareVideoCollectionViewCell.h; sourceTree = "<group>"; };
+		1F2230F31948DE94002A7F33 /* EFShareVideoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShareVideoCollectionViewCell.m; sourceTree = "<group>"; };
+		1F2230F71948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCenteredCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		1F2230F81948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCenteredCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		1F2230FA194A0D3A002A7F33 /* EFSingleSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSingleSelectionView.h; sourceTree = "<group>"; };
+		1F2230FB194A0D3A002A7F33 /* EFSingleSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSingleSelectionView.m; sourceTree = "<group>"; };
+		1F2230FD194A0D4D002A7F33 /* EFSingleSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFSingleSelectionView.xib; sourceTree = "<group>"; };
+		1F223105194B63CA002A7F33 /* EFDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFDrawerViewController.h; sourceTree = "<group>"; };
+		1F223106194B63CA002A7F33 /* EFDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFDrawerViewController.m; sourceTree = "<group>"; };
+		1F2231111950A4A2002A7F33 /* EFPostingCompleteFailureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFPostingCompleteFailureView.xib; sourceTree = "<group>"; };
+		1F22311C19523F91002A7F33 /* EFLinkAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLinkAction.h; sourceTree = "<group>"; };
+		1F22311D19523F91002A7F33 /* EFLinkAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLinkAction.m; sourceTree = "<group>"; };
+		1F223130195398B3002A7F33 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		1F223131195398B3002A7F33 /* libFlurry_5.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.1.0.a; sourceTree = "<group>"; };
+		1F40A84C1926A8E900D6C364 /* EFOnboardingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOnboardingManager.h; sourceTree = "<group>"; };
+		1F40A84D1926A8E900D6C364 /* EFOnboardingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOnboardingManager.m; sourceTree = "<group>"; };
+		1F40A851192A71D300D6C364 /* EFOnboardingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFOnboardingView.h; sourceTree = "<group>"; };
+		1F40A852192A71D300D6C364 /* EFOnboardingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFOnboardingView.m; sourceTree = "<group>"; };
+		1F40A854192A7B7200D6C364 /* UIColor+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+EFExtensions.h"; sourceTree = "<group>"; };
+		1F40A855192A7B7200D6C364 /* UIColor+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EFExtensions.m"; sourceTree = "<group>"; };
+		1F40A8B8192EA24400D6C364 /* EFRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRotationView.h; sourceTree = "<group>"; };
+		1F40A8B9192EA24400D6C364 /* EFRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRotationView.m; sourceTree = "<group>"; };
+		1F40A8BB192EA35900D6C364 /* EFRotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFRotationView.xib; sourceTree = "<group>"; };
+		1F40A8C8193503C600D6C364 /* EFExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFExploreViewController.h; sourceTree = "<group>"; };
+		1F40A8C9193503C600D6C364 /* EFExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFExploreViewController.m; sourceTree = "<group>"; };
+		1F40A8DF1936902400D6C364 /* EFProtocolLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFProtocolLauncher.h; sourceTree = "<group>"; };
+		1F40A8E01936902400D6C364 /* EFProtocolLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFProtocolLauncher.m; sourceTree = "<group>"; };
+		1F40A8E21936913B00D6C364 /* EFProtocolAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFProtocolAction.h; sourceTree = "<group>"; };
+		1F40A8E31936913B00D6C364 /* EFProtocolAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFProtocolAction.m; sourceTree = "<group>"; };
+		1F40A8E51936932E00D6C364 /* EFLaunchPageAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLaunchPageAction.h; sourceTree = "<group>"; };
+		1F40A8E61936932E00D6C364 /* EFLaunchPageAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLaunchPageAction.m; sourceTree = "<group>"; };
+		1F5539441905C3E3003881B5 /* EFTimeFillLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTimeFillLayer.h; sourceTree = "<group>"; };
+		1F5539451905C3E3003881B5 /* EFTimeFillLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTimeFillLayer.m; sourceTree = "<group>"; };
+		1F55394C1907147F003881B5 /* EFZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFZoomView.h; sourceTree = "<group>"; };
+		1F55394D1907147F003881B5 /* EFZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFZoomView.m; sourceTree = "<group>"; };
+		1F553959190975B0003881B5 /* EFVideoPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoPreviewView.h; sourceTree = "<group>"; };
+		1F55395A190975B0003881B5 /* EFVideoPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoPreviewView.m; sourceTree = "<group>"; };
+		1F55396019097CFE003881B5 /* EFVideoPreviewView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EFVideoPreviewView~iphone.xib"; sourceTree = "<group>"; };
+		1F55396319097D98003881B5 /* EFVideoPreviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoPreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		1F55396419097D98003881B5 /* EFVideoPreviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoPreviewCollectionViewCell.m; sourceTree = "<group>"; };
+		1F55396619097DA9003881B5 /* EFVideoPreviewCollectionViewCell~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EFVideoPreviewCollectionViewCell~iphone.xib"; sourceTree = "<group>"; };
+		1F55396F1909D8C4003881B5 /* EFVideoPreviewView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EFVideoPreviewView~ipad.xib"; sourceTree = "<group>"; };
+		1F5539711909D97A003881B5 /* EFVideoPreviewCollectionViewCell~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EFVideoPreviewCollectionViewCell~ipad.xib"; sourceTree = "<group>"; };
+		1F5A910018DB945B000BD73F /* EFUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFUploadManager.h; sourceTree = "<group>"; };
+		1F5A910118DB945B000BD73F /* EFUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFUploadManager.m; sourceTree = "<group>"; };
+		1F5A910418DB96C0000BD73F /* EFReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFReachability.h; sourceTree = "<group>"; };
+		1F5A910518DB96C0000BD73F /* EFReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFReachability.m; sourceTree = "<group>"; };
+		1F5A910818DB9A4E000BD73F /* EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFExtensions.h; sourceTree = "<group>"; };
+		1F5A910918DB9AAB000BD73F /* UIApplication+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+EFExtensions.h"; sourceTree = "<group>"; };
+		1F5A910A18DB9AAB000BD73F /* UIApplication+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+EFExtensions.m"; sourceTree = "<group>"; };
+		1F5A910C18DB9AF1000BD73F /* NSDate+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EFExtensions.h"; sourceTree = "<group>"; };
+		1F5A910D18DB9AF1000BD73F /* NSDate+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EFExtensions.m"; sourceTree = "<group>"; };
+		1F5A911218DBA0E7000BD73F /* EFVideoUploadGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoUploadGroup.h; sourceTree = "<group>"; };
+		1F5A911318DBA0E7000BD73F /* EFVideoUploadGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoUploadGroup.m; sourceTree = "<group>"; };
+		1F772AD518DCA94400FDD5FE /* EFKeychainStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFKeychainStorage.h; sourceTree = "<group>"; };
+		1F772AD618DCA94400FDD5FE /* EFKeychainStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFKeychainStorage.m; sourceTree = "<group>"; };
+		1F772AD918DCAAB500FDD5FE /* EFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFUser.h; sourceTree = "<group>"; };
+		1F772ADA18DCAAB500FDD5FE /* EFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFUser.m; sourceTree = "<group>"; };
+		1F772ADE18DCB62800FDD5FE /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		1F772AE518DCBD6200FDD5FE /* EFSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingsViewController.h; sourceTree = "<group>"; };
+		1F772AE618DCBD6200FDD5FE /* EFSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingsViewController.m; sourceTree = "<group>"; };
+		1F772AE818DCDFA800FDD5FE /* NSFileManager+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772AE918DCDFA800FDD5FE /* NSFileManager+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772AEE18DCFB2B00FDD5FE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1F772AF218DCFEFA00FDD5FE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		1F772AF918E1E92300FDD5FE /* EFTwitterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTwitterManager.h; sourceTree = "<group>"; };
+		1F772AFA18E1E92300FDD5FE /* EFTwitterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTwitterManager.m; sourceTree = "<group>"; };
+		1F772AFE18E1F01400FDD5FE /* EFTwitterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTwitterRequest.h; sourceTree = "<group>"; };
+		1F772AFF18E1F01400FDD5FE /* EFTwitterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTwitterRequest.m; sourceTree = "<group>"; };
+		1F772B0118E1F64500FDD5FE /* NSString+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772B0218E1F64500FDD5FE /* NSString+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772B0718E1FB6800FDD5FE /* NSData+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772B0818E1FB6800FDD5FE /* NSData+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772B1118E2569400FDD5FE /* EFSemiTransparentModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSemiTransparentModalView.h; sourceTree = "<group>"; };
+		1F772B1218E2569400FDD5FE /* EFSemiTransparentModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSemiTransparentModalView.m; sourceTree = "<group>"; };
+		1F772B1518E332D700FDD5FE /* EFSingleSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSingleSelectionCell.h; sourceTree = "<group>"; };
+		1F772B1618E332D700FDD5FE /* EFSingleSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSingleSelectionCell.m; sourceTree = "<group>"; };
+		1F772B1818E3343D00FDD5FE /* EFMoreSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMoreSelectionCell.h; sourceTree = "<group>"; };
+		1F772B1918E3343D00FDD5FE /* EFMoreSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMoreSelectionCell.m; sourceTree = "<group>"; };
+		1F772B1C18E3392D00FDD5FE /* EFSemiTransparentModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSemiTransparentModalViewController.h; sourceTree = "<group>"; };
+		1F772B1D18E3392D00FDD5FE /* EFSemiTransparentModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSemiTransparentModalViewController.m; sourceTree = "<group>"; };
+		1F772B2218E33AC400FDD5FE /* UIStoryboard+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772B2318E33AC400FDD5FE /* UIStoryboard+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772B2D18E37A3D00FDD5FE /* EFCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCameraManager.h; sourceTree = "<group>"; };
+		1F772B2E18E37A3D00FDD5FE /* EFCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCameraManager.m; sourceTree = "<group>"; };
+		1F772B3918E4930300FDD5FE /* EFMediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFMediaManager.h; sourceTree = "<group>"; };
+		1F772B3A18E4930300FDD5FE /* EFMediaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFMediaManager.m; sourceTree = "<group>"; };
+		1F772B4918E6430E00FDD5FE /* EFAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFAPIClient.h; sourceTree = "<group>"; };
+		1F772B4A18E6430E00FDD5FE /* EFAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFAPIClient.m; sourceTree = "<group>"; };
+		1F772B4E18E6433600FDD5FE /* EFNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFNetworkRequest.h; sourceTree = "<group>"; };
+		1F772B4F18E6433600FDD5FE /* EFNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFNetworkRequest.m; sourceTree = "<group>"; };
+		1F772B5418E6483800FDD5FE /* NSDictionary+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772B5518E6483800FDD5FE /* NSDictionary+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772B5718E6487D00FDD5FE /* UIAlertView+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772B5818E6487D00FDD5FE /* UIAlertView+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772B6518E9FEB200FDD5FE /* EFSettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingsManager.h; sourceTree = "<group>"; };
+		1F772B6618E9FEB200FDD5FE /* EFSettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingsManager.m; sourceTree = "<group>"; };
+		1F772B6A18E9FF2A00FDD5FE /* EFCachedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCachedManager.h; sourceTree = "<group>"; };
+		1F772B6B18E9FF2A00FDD5FE /* EFCachedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCachedManager.m; sourceTree = "<group>"; };
+		1F772B6E18EA207F00FDD5FE /* EFCachingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCachingManager.h; sourceTree = "<group>"; };
+		1F772B6F18EA207F00FDD5FE /* EFCachingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCachingManager.m; sourceTree = "<group>"; };
+		1F772B8318EC646100FDD5FE /* UIViewController+EFExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EFExtensions.h"; sourceTree = "<group>"; };
+		1F772B8418EC646100FDD5FE /* UIViewController+EFExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EFExtensions.m"; sourceTree = "<group>"; };
+		1F772B8918EC7EAA00FDD5FE /* EFSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingsCell.h; sourceTree = "<group>"; };
+		1F772B8A18EC7EAA00FDD5FE /* EFSettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingsCell.m; sourceTree = "<group>"; };
+		1F772B8F18ECCA8400FDD5FE /* EFSettingsHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingsHeaderCell.h; sourceTree = "<group>"; };
+		1F772B9018ECCA8400FDD5FE /* EFSettingsHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingsHeaderCell.m; sourceTree = "<group>"; };
+		1F772B9618EE143900FDD5FE /* EFSettingsSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSettingsSelectionCell.h; sourceTree = "<group>"; };
+		1F772B9718EE143900FDD5FE /* EFSettingsSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSettingsSelectionCell.m; sourceTree = "<group>"; };
+		1F772BBF18F49B5400FDD5FE /* EFVideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoDetailViewController.h; sourceTree = "<group>"; };
+		1F772BC018F49B5400FDD5FE /* EFVideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoDetailViewController.m; sourceTree = "<group>"; };
+		1F772BC618F4AB1600FDD5FE /* EFVideoDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoDetailCell.h; sourceTree = "<group>"; };
+		1F772BC718F4AB1600FDD5FE /* EFVideoDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoDetailCell.m; sourceTree = "<group>"; };
+		1F772BCA18F4B21400FDD5FE /* EFVideoDateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoDateHeaderView.h; sourceTree = "<group>"; };
+		1F772BCB18F4B21400FDD5FE /* EFVideoDateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoDateHeaderView.m; sourceTree = "<group>"; };
+		1F772BCC18F4B21400FDD5FE /* EFVideoRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideoRowCell.h; sourceTree = "<group>"; };
+		1F772BCD18F4B21400FDD5FE /* EFVideoRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideoRowCell.m; sourceTree = "<group>"; };
+		1F772BCE18F4B21400FDD5FE /* EFVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFVideosViewController.h; sourceTree = "<group>"; };
+		1F772BCF18F4B21400FDD5FE /* EFVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFVideosViewController.m; sourceTree = "<group>"; };
+		1F772BD518F4B76400FDD5FE /* EFLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLocationManager.h; sourceTree = "<group>"; };
+		1F772BD618F4B76400FDD5FE /* EFLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLocationManager.m; sourceTree = "<group>"; };
+		1F772BD818F5A96400FDD5FE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1F772BDF18F8695E00FDD5FE /* EFWindowPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFWindowPresenter.h; sourceTree = "<group>"; };
+		1F772BE018F8695E00FDD5FE /* EFWindowPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFWindowPresenter.m; sourceTree = "<group>"; };
+		1F772BEC18FC47E700FDD5FE /* EFShareVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFShareVideoViewController.h; sourceTree = "<group>"; };
+		1F772BED18FC47E700FDD5FE /* EFShareVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFShareVideoViewController.m; sourceTree = "<group>"; };
+		1F772BEF18FC539700FDD5FE /* EFSettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFSettingsCell.xib; sourceTree = "<group>"; };
+		1F772BF118FC556200FDD5FE /* EFSettingsSelectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFSettingsSelectionCell.xib; sourceTree = "<group>"; };
+		1F772BF918FF038400FDD5FE /* EFPostingCompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFPostingCompleteView.h; sourceTree = "<group>"; };
+		1F772BFA18FF038400FDD5FE /* EFPostingCompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFPostingCompleteView.m; sourceTree = "<group>"; };
+		1F772BFE18FF039B00FDD5FE /* EFPostingCompleteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFPostingCompleteView.xib; sourceTree = "<group>"; };
+		1F772C061900455700FDD5FE /* EFTimeSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTimeSliderView.h; sourceTree = "<group>"; };
+		1F772C071900455700FDD5FE /* EFTimeSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTimeSliderView.m; sourceTree = "<group>"; };
+		1F772C0E19009AE800FDD5FE /* EFTimeTrackingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTimeTrackingView.h; sourceTree = "<group>"; };
+		1F772C0F19009AE800FDD5FE /* EFTimeTrackingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTimeTrackingView.m; sourceTree = "<group>"; };
+		1F9C8E7D1958EF470065483C /* NSRegularExpression+EFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+EFExtension.h"; sourceTree = "<group>"; };
+		1F9C8E7E1958EF480065483C /* NSRegularExpression+EFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+EFExtension.m"; sourceTree = "<group>"; };
+		1FB9111E190AD5D300FEFFB8 /* EFTouchThroughView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTouchThroughView.h; sourceTree = "<group>"; };
+		1FB9111F190AD5D300FEFFB8 /* EFTouchThroughView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTouchThroughView.m; sourceTree = "<group>"; };
+		1FB9112E190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTermsAndConditionsViewController.h; sourceTree = "<group>"; };
+		1FB9112F190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTermsAndConditionsViewController.m; sourceTree = "<group>"; };
+		1FB91131190EF02B00FEFFB8 /* EFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFWebViewController.h; sourceTree = "<group>"; };
+		1FB91132190EF02B00FEFFB8 /* EFWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFWebViewController.m; sourceTree = "<group>"; };
+		1FB91140191168FD00FEFFB8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1FB91142191168FD00FEFFB8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1FB911481912BAB200FEFFB8 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		1FB911491912BAB200FEFFB8 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		1FB911FB1914241200FEFFB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1FB911FD1914242400FEFFB8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1FB91208191D523500FEFFB8 /* EFLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFLoadingView.h; sourceTree = "<group>"; };
+		1FB91209191D523500FEFFB8 /* EFLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFLoadingView.m; sourceTree = "<group>"; };
+		1FB912191923E15C00FEFFB8 /* EFPostingCompleteViewCameraRoll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFPostingCompleteViewCameraRoll.xib; sourceTree = "<group>"; };
+		1FB9121B19241AE300FEFFB8 /* EFSendVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSendVideoViewController.h; sourceTree = "<group>"; };
+		1FB9121C19241AE300FEFFB8 /* EFSendVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSendVideoViewController.m; sourceTree = "<group>"; };
+		1FEB064D18DA343200821F2F /* TapClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEB065018DA343200821F2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FEB065218DA343200821F2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FEB065418DA343200821F2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FEB065818DA343200821F2F /* TapClips-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TapClips-Info.plist"; sourceTree = "<group>"; };
+		1FEB065A18DA343200821F2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FEB065C18DA343200821F2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FEB065E18DA343200821F2F /* TapClips-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TapClips-Prefix.pch"; sourceTree = "<group>"; };
+		1FEB065F18DA343200821F2F /* EFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAppDelegate.h; sourceTree = "<group>"; };
+		1FEB066018DA343200821F2F /* EFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFAppDelegate.m; sourceTree = "<group>"; };
+		1FEB066318DA343200821F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1FEB066618DA343200821F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		1FEB066818DA343200821F2F /* EFRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFRootViewController.h; sourceTree = "<group>"; };
+		1FEB066918DA343200821F2F /* EFRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFRootViewController.m; sourceTree = "<group>"; };
+		1FEB066B18DA343200821F2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1FEB067118DA343200821F2F /* TapClipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapClipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEB067A18DA343300821F2F /* TapClipsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TapClipsTests-Info.plist"; sourceTree = "<group>"; };
+		1FEB067C18DA343300821F2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FEB067E18DA343300821F2F /* Tap_ClipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tap_ClipsTests.m; sourceTree = "<group>"; };
+		1FEB068818DA377600821F2F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1FEB068A18DA377F00821F2F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1FEB068C18DA378A00821F2F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1FEB068E18DA379600821F2F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1FEB069018DA37A100821F2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1FEB069218DA382A00821F2F /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		1FEB06A218DA411800821F2F /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSRuntime.framework; path = "../../../../Downloads/aws-ios-sdk-1.7.1/AWSRuntime.framework"; sourceTree = "<group>"; };
+		1FEB06A318DA411800821F2F /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../../../../Downloads/aws-ios-sdk-1.7.1/AWSS3.framework"; sourceTree = "<group>"; };
+		1FEB06A618DA450300821F2F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1FEB06A818DA4CA800821F2F /* EFRecordFilterPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFRecordFilterPipeline.h; sourceTree = "<group>"; };
+		1FEB06A918DA4CA800821F2F /* EFRecordFilterPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFRecordFilterPipeline.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FEB064A18DA343200821F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB911FC1914241200FEFFB8 /* SystemConfiguration.framework in Frameworks */,
+				1FB911FE1914242400FEFFB8 /* Security.framework in Frameworks */,
+				1F772BD918F5A96400FDD5FE /* MediaPlayer.framework in Frameworks */,
+				1F772AF318DCFEFA00FDD5FE /* Accounts.framework in Frameworks */,
+				1F772AEF18DCFB2B00FDD5FE /* Social.framework in Frameworks */,
+				1F168BEF18DB698000AF93CD /* libz.dylib in Frameworks */,
+				1FEB06A718DA450300821F2F /* AssetsLibrary.framework in Frameworks */,
+				1FEB06A418DA411800821F2F /* AWSRuntime.framework in Frameworks */,
+				1FEB06A518DA411800821F2F /* AWSS3.framework in Frameworks */,
+				1FEB06A118DA3D0E00821F2F /* libGPUImage.a in Frameworks */,
+				1FEB069118DA37A100821F2F /* QuartzCore.framework in Frameworks */,
+				1F223132195398B3002A7F33 /* libFlurry_5.1.0.a in Frameworks */,
+				1FEB068F18DA379600821F2F /* AVFoundation.framework in Frameworks */,
+				1FEB068D18DA378A00821F2F /* OpenGLES.framework in Frameworks */,
+				1FEB068B18DA377F00821F2F /* CoreVideo.framework in Frameworks */,
+				1FEB068918DA377600821F2F /* CoreMedia.framework in Frameworks */,
+				1F168BEB18DB691C00AF93CD /* libTestFlight.a in Frameworks */,
+				1F772ADF18DCB62800FDD5FE /* FacebookSDK.framework in Frameworks */,
+				1FEB065318DA343200821F2F /* CoreGraphics.framework in Frameworks */,
+				1FEB065518DA343200821F2F /* UIKit.framework in Frameworks */,
+				1FEB065118DA343200821F2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB066E18DA343200821F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEB067518DA343200821F2F /* UIKit.framework in Frameworks */,
+				1FEB067418DA343200821F2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F168BE418DB691C00AF93CD /* TestFlightSDK3.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1F168BE518DB691C00AF93CD /* libTestFlight.a */,
+				1F168BE618DB691C00AF93CD /* README.md */,
+				1F168BE718DB691C00AF93CD /* release_notes.md */,
+				1F168BE818DB691C00AF93CD /* TestFlight+AsyncLogging.h */,
+				1F168BE918DB691C00AF93CD /* TestFlight+ManualSessions.h */,
+				1F168BEA18DB691C00AF93CD /* TestFlight.h */,
+			);
+			name = TestFlightSDK3.0.0;
+			path = "Tap Clips/TestFlightSDK3.0.0";
+			sourceTree = "<group>";
+		};
+		1F223102194B63A1002A7F33 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				1F772AE418DCBD4800FDD5FE /* Settings */,
+				1F772BC918F4B1FE00FDD5FE /* Videos */,
+				1F40A8C5193503A700D6C364 /* Explore */,
+				1F223105194B63CA002A7F33 /* EFDrawerViewController.h */,
+				1F223106194B63CA002A7F33 /* EFDrawerViewController.m */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
+		1F22312F195398B3002A7F33 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				1F223130195398B3002A7F33 /* Flurry.h */,
+				1F223131195398B3002A7F33 /* libFlurry_5.1.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		1F40A8C5193503A700D6C364 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				1F40A8C8193503C600D6C364 /* EFExploreViewController.h */,
+				1F40A8C9193503C600D6C364 /* EFExploreViewController.m */,
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		1F40A8DC19368FFA00D6C364 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1F40A8DF1936902400D6C364 /* EFProtocolLauncher.h */,
+				1F40A8E01936902400D6C364 /* EFProtocolLauncher.m */,
+				1F40A8E21936913B00D6C364 /* EFProtocolAction.h */,
+				1F40A8E31936913B00D6C364 /* EFProtocolAction.m */,
+				1F40A8E51936932E00D6C364 /* EFLaunchPageAction.h */,
+				1F40A8E61936932E00D6C364 /* EFLaunchPageAction.m */,
+				1F2230AF193D3114002A7F33 /* EFReturnAction.h */,
+				1F2230B0193D3114002A7F33 /* EFReturnAction.m */,
+				1F22311C19523F91002A7F33 /* EFLinkAction.h */,
+				1F22311D19523F91002A7F33 /* EFLinkAction.m */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		1F55396219097D79003881B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F55396319097D98003881B5 /* EFVideoPreviewCollectionViewCell.h */,
+				1F55396419097D98003881B5 /* EFVideoPreviewCollectionViewCell.m */,
+				1F55396619097DA9003881B5 /* EFVideoPreviewCollectionViewCell~iphone.xib */,
+				1F5539711909D97A003881B5 /* EFVideoPreviewCollectionViewCell~ipad.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		1F5A90FF18DB944C000BD73F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B6D18E9FF2E00FDD5FE /* Cached Managers */,
+				1F772B2D18E37A3D00FDD5FE /* EFCameraManager.h */,
+				1F772B2E18E37A3D00FDD5FE /* EFCameraManager.m */,
+				1F772BD518F4B76400FDD5FE /* EFLocationManager.h */,
+				1F772BD618F4B76400FDD5FE /* EFLocationManager.m */,
+				1F772B3918E4930300FDD5FE /* EFMediaManager.h */,
+				1F772B3A18E4930300FDD5FE /* EFMediaManager.m */,
+				1F772AF918E1E92300FDD5FE /* EFTwitterManager.h */,
+				1F772AFA18E1E92300FDD5FE /* EFTwitterManager.m */,
+				1F772AFE18E1F01400FDD5FE /* EFTwitterRequest.h */,
+				1F772AFF18E1F01400FDD5FE /* EFTwitterRequest.m */,
+				1F5A910018DB945B000BD73F /* EFUploadManager.h */,
+				1F5A910118DB945B000BD73F /* EFUploadManager.m */,
+				1F5A911218DBA0E7000BD73F /* EFVideoUploadGroup.h */,
+				1F5A911318DBA0E7000BD73F /* EFVideoUploadGroup.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		1F5A910318DB96AB000BD73F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A910418DB96C0000BD73F /* EFReachability.h */,
+				1F5A910518DB96C0000BD73F /* EFReachability.m */,
+				1F772B4918E6430E00FDD5FE /* EFAPIClient.h */,
+				1F772B4A18E6430E00FDD5FE /* EFAPIClient.m */,
+				1F772B4E18E6433600FDD5FE /* EFNetworkRequest.h */,
+				1F772B4F18E6433600FDD5FE /* EFNetworkRequest.m */,
+				1F2230C2193FB51F002A7F33 /* EFImage.h */,
+				1F2230C3193FB51F002A7F33 /* EFImage.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		1F5A910718DB9A1B000BD73F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A910818DB9A4E000BD73F /* EFExtensions.h */,
+				1F5A910918DB9AAB000BD73F /* UIApplication+EFExtensions.h */,
+				1F5A910A18DB9AAB000BD73F /* UIApplication+EFExtensions.m */,
+				1F5A910C18DB9AF1000BD73F /* NSDate+EFExtensions.h */,
+				1F5A910D18DB9AF1000BD73F /* NSDate+EFExtensions.m */,
+				1F772AD518DCA94400FDD5FE /* EFKeychainStorage.h */,
+				1F772AD618DCA94400FDD5FE /* EFKeychainStorage.m */,
+				1F772AE818DCDFA800FDD5FE /* NSFileManager+EFExtensions.h */,
+				1F772AE918DCDFA800FDD5FE /* NSFileManager+EFExtensions.m */,
+				1F772B0118E1F64500FDD5FE /* NSString+EFExtensions.h */,
+				1F772B0218E1F64500FDD5FE /* NSString+EFExtensions.m */,
+				1F772B0718E1FB6800FDD5FE /* NSData+EFExtensions.h */,
+				1F772B0818E1FB6800FDD5FE /* NSData+EFExtensions.m */,
+				1F772B2218E33AC400FDD5FE /* UIStoryboard+EFExtensions.h */,
+				1F772B2318E33AC400FDD5FE /* UIStoryboard+EFExtensions.m */,
+				1F772B5418E6483800FDD5FE /* NSDictionary+EFExtensions.h */,
+				1F772B5518E6483800FDD5FE /* NSDictionary+EFExtensions.m */,
+				1F772B5718E6487D00FDD5FE /* UIAlertView+EFExtensions.h */,
+				1F772B5818E6487D00FDD5FE /* UIAlertView+EFExtensions.m */,
+				1F772B8318EC646100FDD5FE /* UIViewController+EFExtensions.h */,
+				1F772B8418EC646100FDD5FE /* UIViewController+EFExtensions.m */,
+				1F40A854192A7B7200D6C364 /* UIColor+EFExtensions.h */,
+				1F40A855192A7B7200D6C364 /* UIColor+EFExtensions.m */,
+				1F2230C5193FCEAC002A7F33 /* UIImage+EFExtensions.h */,
+				1F2230C6193FCEAC002A7F33 /* UIImage+EFExtensions.m */,
+				1F9C8E7D1958EF470065483C /* NSRegularExpression+EFExtension.h */,
+				1F9C8E7E1958EF480065483C /* NSRegularExpression+EFExtension.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		1F772AD418DCA89900FDD5FE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1F55396219097D79003881B5 /* Cells */,
+				1F772C051900453D00FDD5FE /* Views */,
+				1FEB066818DA343200821F2F /* EFRootViewController.h */,
+				1FEB066918DA343200821F2F /* EFRootViewController.m */,
+				1FEB06A818DA4CA800821F2F /* EFRecordFilterPipeline.h */,
+				1FEB06A918DA4CA800821F2F /* EFRecordFilterPipeline.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		1F772AD818DCAAA200FDD5FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F772AD918DCAAB500FDD5FE /* EFUser.h */,
+				1F772ADA18DCAAB500FDD5FE /* EFUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1F772AE418DCBD4800FDD5FE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B8818EC7DA100FDD5FE /* Cells */,
+				1F772AE518DCBD6200FDD5FE /* EFSettingsViewController.h */,
+				1F772AE618DCBD6200FDD5FE /* EFSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		1F772B0D18E255F500FDD5FE /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B1B18E338E700FDD5FE /* Views */,
+				1F772B1418E3317500FDD5FE /* Cells */,
+				1F772B1C18E3392D00FDD5FE /* EFSemiTransparentModalViewController.h */,
+				1F772B1D18E3392D00FDD5FE /* EFSemiTransparentModalViewController.m */,
+				1F772BDF18F8695E00FDD5FE /* EFWindowPresenter.h */,
+				1F772BE018F8695E00FDD5FE /* EFWindowPresenter.m */,
+			);
+			name = Overlays;
+			sourceTree = "<group>";
+		};
+		1F772B1418E3317500FDD5FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B1518E332D700FDD5FE /* EFSingleSelectionCell.h */,
+				1F772B1618E332D700FDD5FE /* EFSingleSelectionCell.m */,
+				1F772B1818E3343D00FDD5FE /* EFMoreSelectionCell.h */,
+				1F772B1918E3343D00FDD5FE /* EFMoreSelectionCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		1F772B1B18E338E700FDD5FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B1118E2569400FDD5FE /* EFSemiTransparentModalView.h */,
+				1F772B1218E2569400FDD5FE /* EFSemiTransparentModalView.m */,
+				1F772BF918FF038400FDD5FE /* EFPostingCompleteView.h */,
+				1F772BFA18FF038400FDD5FE /* EFPostingCompleteView.m */,
+				1F772BFE18FF039B00FDD5FE /* EFPostingCompleteView.xib */,
+				1F2231111950A4A2002A7F33 /* EFPostingCompleteFailureView.xib */,
+				1FB912191923E15C00FEFFB8 /* EFPostingCompleteViewCameraRoll.xib */,
+				1FB91208191D523500FEFFB8 /* EFLoadingView.h */,
+				1FB91209191D523500FEFFB8 /* EFLoadingView.m */,
+				1F2230FA194A0D3A002A7F33 /* EFSingleSelectionView.h */,
+				1F2230FB194A0D3A002A7F33 /* EFSingleSelectionView.m */,
+				1F2230FD194A0D4D002A7F33 /* EFSingleSelectionView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F772B6D18E9FF2E00FDD5FE /* Cached Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B6518E9FEB200FDD5FE /* EFSettingsManager.h */,
+				1F772B6618E9FEB200FDD5FE /* EFSettingsManager.m */,
+				1F772B6A18E9FF2A00FDD5FE /* EFCachedManager.h */,
+				1F772B6B18E9FF2A00FDD5FE /* EFCachedManager.m */,
+				1F772B6E18EA207F00FDD5FE /* EFCachingManager.h */,
+				1F772B6F18EA207F00FDD5FE /* EFCachingManager.m */,
+				1F40A84C1926A8E900D6C364 /* EFOnboardingManager.h */,
+				1F40A84D1926A8E900D6C364 /* EFOnboardingManager.m */,
+			);
+			name = "Cached Managers";
+			sourceTree = "<group>";
+		};
+		1F772B8818EC7DA100FDD5FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F772B8918EC7EAA00FDD5FE /* EFSettingsCell.h */,
+				1F772B8A18EC7EAA00FDD5FE /* EFSettingsCell.m */,
+				1F772BEF18FC539700FDD5FE /* EFSettingsCell.xib */,
+				1F772B8F18ECCA8400FDD5FE /* EFSettingsHeaderCell.h */,
+				1F772B9018ECCA8400FDD5FE /* EFSettingsHeaderCell.m */,
+				1F772B9618EE143900FDD5FE /* EFSettingsSelectionCell.h */,
+				1F772B9718EE143900FDD5FE /* EFSettingsSelectionCell.m */,
+				1F772BF118FC556200FDD5FE /* EFSettingsSelectionCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		1F772BBE18F49B2C00FDD5FE /* Video Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F772BC518F4AAFB00FDD5FE /* Cells */,
+				1F772BBF18F49B5400FDD5FE /* EFVideoDetailViewController.h */,
+				1F772BC018F49B5400FDD5FE /* EFVideoDetailViewController.m */,
+				1F772BEC18FC47E700FDD5FE /* EFShareVideoViewController.h */,
+				1F772BED18FC47E700FDD5FE /* EFShareVideoViewController.m */,
+				1FB9121B19241AE300FEFFB8 /* EFSendVideoViewController.h */,
+				1FB9121C19241AE300FEFFB8 /* EFSendVideoViewController.m */,
+				1F2230F71948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.h */,
+				1F2230F81948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.m */,
+			);
+			name = "Video Detail";
+			sourceTree = "<group>";
+		};
+		1F772BC518F4AAFB00FDD5FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F772BC618F4AB1600FDD5FE /* EFVideoDetailCell.h */,
+				1F772BC718F4AB1600FDD5FE /* EFVideoDetailCell.m */,
+				1F2230F21948DE94002A7F33 /* EFShareVideoCollectionViewCell.h */,
+				1F2230F31948DE94002A7F33 /* EFShareVideoCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		1F772BC918F4B1FE00FDD5FE /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				1F772BD318F4B21700FDD5FE /* Views */,
+				1F772BD418F4B22200FDD5FE /* Cells */,
+				1F772BCE18F4B21400FDD5FE /* EFVideosViewController.h */,
+				1F772BCF18F4B21400FDD5FE /* EFVideosViewController.m */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		1F772BD318F4B21700FDD5FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F772BCA18F4B21400FDD5FE /* EFVideoDateHeaderView.h */,
+				1F772BCB18F4B21400FDD5FE /* EFVideoDateHeaderView.m */,
+				1F2230DA1946350F002A7F33 /* EFVideoDateHeaderView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F772BD418F4B22200FDD5FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F772BCC18F4B21400FDD5FE /* EFVideoRowCell.h */,
+				1F772BCD18F4B21400FDD5FE /* EFVideoRowCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		1F772C051900453D00FDD5FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F772C061900455700FDD5FE /* EFTimeSliderView.h */,
+				1F772C071900455700FDD5FE /* EFTimeSliderView.m */,
+				1F772C0E19009AE800FDD5FE /* EFTimeTrackingView.h */,
+				1F772C0F19009AE800FDD5FE /* EFTimeTrackingView.m */,
+				1F5539441905C3E3003881B5 /* EFTimeFillLayer.h */,
+				1F5539451905C3E3003881B5 /* EFTimeFillLayer.m */,
+				1F55394C1907147F003881B5 /* EFZoomView.h */,
+				1F55394D1907147F003881B5 /* EFZoomView.m */,
+				1F553959190975B0003881B5 /* EFVideoPreviewView.h */,
+				1F55395A190975B0003881B5 /* EFVideoPreviewView.m */,
+				1F55396019097CFE003881B5 /* EFVideoPreviewView~iphone.xib */,
+				1F55396F1909D8C4003881B5 /* EFVideoPreviewView~ipad.xib */,
+				1FB9111E190AD5D300FEFFB8 /* EFTouchThroughView.h */,
+				1FB9111F190AD5D300FEFFB8 /* EFTouchThroughView.m */,
+				1F40A851192A71D300D6C364 /* EFOnboardingView.h */,
+				1F40A852192A71D300D6C364 /* EFOnboardingView.m */,
+				1F40A8B8192EA24400D6C364 /* EFRotationView.h */,
+				1F40A8B9192EA24400D6C364 /* EFRotationView.m */,
+				1F40A8BB192EA35900D6C364 /* EFRotationView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1FB9112D190ED4C000FEFFB8 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				1FB9112E190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.h */,
+				1FB9112F190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.m */,
+				1FB91131190EF02B00FEFFB8 /* EFWebViewController.h */,
+				1FB91132190EF02B00FEFFB8 /* EFWebViewController.m */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
+		1FEB064418DA343200821F2F = {
+			isa = PBXGroup;
+			children = (
+				1FEB065618DA343200821F2F /* Tap Clips */,
+				1FEB067818DA343200821F2F /* Tap ClipsTests */,
+				1FEB064F18DA343200821F2F /* Frameworks */,
+				1FEB064E18DA343200821F2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FEB064E18DA343200821F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEB064D18DA343200821F2F /* TapClips.app */,
+				1FEB067118DA343200821F2F /* TapClipsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FEB064F18DA343200821F2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F772AF218DCFEFA00FDD5FE /* Accounts.framework */,
+				1FEB06A618DA450300821F2F /* AssetsLibrary.framework */,
+				1FEB068E18DA379600821F2F /* AVFoundation.framework */,
+				1FEB06A218DA411800821F2F /* AWSRuntime.framework */,
+				1FEB06A318DA411800821F2F /* AWSS3.framework */,
+				1FEB065218DA343200821F2F /* CoreGraphics.framework */,
+				1FEB068818DA377600821F2F /* CoreMedia.framework */,
+				1FEB068A18DA377F00821F2F /* CoreVideo.framework */,
+				1F772ADE18DCB62800FDD5FE /* FacebookSDK.framework */,
+				1F22312F195398B3002A7F33 /* Flurry */,
+				1FEB065018DA343200821F2F /* Foundation.framework */,
+				1FEB069218DA382A00821F2F /* GPUImage.xcodeproj */,
+				1F168BEE18DB698000AF93CD /* libz.dylib */,
+				1F772BD818F5A96400FDD5FE /* MediaPlayer.framework */,
+				1FEB068C18DA378A00821F2F /* OpenGLES.framework */,
+				1FEB069018DA37A100821F2F /* QuartzCore.framework */,
+				1FB911FD1914242400FEFFB8 /* Security.framework */,
+				1F772AEE18DCFB2B00FDD5FE /* Social.framework */,
+				1FB911FB1914241200FEFFB8 /* SystemConfiguration.framework */,
+				1F168BE418DB691C00AF93CD /* TestFlightSDK3.0.0 */,
+				1FEB065418DA343200821F2F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FEB065618DA343200821F2F /* Tap Clips */ = {
+			isa = PBXGroup;
+			children = (
+				1FEB066B18DA343200821F2F /* Images.xcassets */,
+				1FEB065F18DA343200821F2F /* EFAppDelegate.h */,
+				1FEB066018DA343200821F2F /* EFAppDelegate.m */,
+				1FEB066218DA343200821F2F /* Main_iPhone.storyboard */,
+				1FEB066518DA343200821F2F /* Main_iPad.storyboard */,
+				1F772B0D18E255F500FDD5FE /* Overlays */,
+				1FB9112D190ED4C000FEFFB8 /* Initial */,
+				1F772AD418DCA89900FDD5FE /* Root */,
+				1F772BBE18F49B2C00FDD5FE /* Video Detail */,
+				1F223102194B63A1002A7F33 /* Drawer */,
+				1F5A90FF18DB944C000BD73F /* Managers */,
+				1F772AD818DCAAA200FDD5FE /* Models */,
+				1F40A8DC19368FFA00D6C364 /* Protocol */,
+				1F5A910718DB9A1B000BD73F /* Extensions */,
+				1F5A910318DB96AB000BD73F /* Network */,
+				1FEB065718DA343200821F2F /* Supporting Files */,
+			);
+			path = "Tap Clips";
+			sourceTree = "<group>";
+		};
+		1FEB065718DA343200821F2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FB911481912BAB200FEFFB8 /* Default-Landscape.png */,
+				1FB911491912BAB200FEFFB8 /* Default-Landscape@2x.png */,
+				1FB91140191168FD00FEFFB8 /* Default-568h@2x.png */,
+				1FB91142191168FD00FEFFB8 /* Default@2x.png */,
+				1FEB065818DA343200821F2F /* TapClips-Info.plist */,
+				1FEB065918DA343200821F2F /* InfoPlist.strings */,
+				1FEB065C18DA343200821F2F /* main.m */,
+				1FEB065E18DA343200821F2F /* TapClips-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FEB067818DA343200821F2F /* Tap ClipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FEB067E18DA343300821F2F /* Tap_ClipsTests.m */,
+				1FEB067918DA343200821F2F /* Supporting Files */,
+			);
+			path = "Tap ClipsTests";
+			sourceTree = "<group>";
+		};
+		1FEB067918DA343200821F2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FEB067A18DA343300821F2F /* TapClipsTests-Info.plist */,
+				1FEB067B18DA343300821F2F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FEB069318DA382A00821F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEB069918DA382A00821F2F /* libGPUImage.a */,
+				1F264CFE19D09EFB00144164 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FEB064C18DA343200821F2F /* TapClips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEB068218DA343300821F2F /* Build configuration list for PBXNativeTarget "TapClips" */;
+			buildPhases = (
+				1FEB064918DA343200821F2F /* Sources */,
+				1FEB064A18DA343200821F2F /* Frameworks */,
+				1FEB064B18DA343200821F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FEB069D18DA389E00821F2F /* PBXTargetDependency */,
+			);
+			name = TapClips;
+			productName = "Tap Clips";
+			productReference = 1FEB064D18DA343200821F2F /* TapClips.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FEB067018DA343200821F2F /* TapClipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEB068518DA343300821F2F /* Build configuration list for PBXNativeTarget "TapClipsTests" */;
+			buildPhases = (
+				1FEB066D18DA343200821F2F /* Sources */,
+				1FEB066E18DA343200821F2F /* Frameworks */,
+				1FEB066F18DA343200821F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FEB067718DA343200821F2F /* PBXTargetDependency */,
+			);
+			name = TapClipsTests;
+			productName = "Tap ClipsTests";
+			productReference = 1FEB067118DA343200821F2F /* TapClipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FEB064518DA343200821F2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Elemental Foundry";
+				TargetAttributes = {
+					1FEB067018DA343200821F2F = {
+						TestTargetID = 1FEB064C18DA343200821F2F;
+					};
+				};
+			};
+			buildConfigurationList = 1FEB064818DA343200821F2F /* Build configuration list for PBXProject "TapClips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FEB064418DA343200821F2F;
+			productRefGroup = 1FEB064E18DA343200821F2F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1FEB069318DA382A00821F2F /* Products */;
+					ProjectRef = 1FEB069218DA382A00821F2F /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1FEB064C18DA343200821F2F /* TapClips */,
+				1FEB067018DA343200821F2F /* TapClipsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F264CFE19D09EFB00144164 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 1F264CFD19D09EFB00144164 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FEB069918DA382A00821F2F /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 1FEB069818DA382A00821F2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FEB064B18DA343200821F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F40A8BC192EA35900D6C364 /* EFRotationView.xib in Resources */,
+				1FB91145191168FD00FEFFB8 /* Default@2x.png in Resources */,
+				1F168BED18DB691C00AF93CD /* release_notes.md in Resources */,
+				1F55396119097CFE003881B5 /* EFVideoPreviewView~iphone.xib in Resources */,
+				1FB9114A1912BAB200FEFFB8 /* Default-Landscape.png in Resources */,
+				1FEB066718DA343200821F2F /* Main_iPad.storyboard in Resources */,
+				1F2230DB1946350F002A7F33 /* EFVideoDateHeaderView.xib in Resources */,
+				1FB9121A1923E15C00FEFFB8 /* EFPostingCompleteViewCameraRoll.xib in Resources */,
+				1F5539721909D97A003881B5 /* EFVideoPreviewCollectionViewCell~ipad.xib in Resources */,
+				1F55396719097DA9003881B5 /* EFVideoPreviewCollectionViewCell~iphone.xib in Resources */,
+				1FB91143191168FD00FEFFB8 /* Default-568h@2x.png in Resources */,
+				1FEB066C18DA343200821F2F /* Images.xcassets in Resources */,
+				1F772BF218FC556200FDD5FE /* EFSettingsSelectionCell.xib in Resources */,
+				1F772BFF18FF039B00FDD5FE /* EFPostingCompleteView.xib in Resources */,
+				1F168BEC18DB691C00AF93CD /* README.md in Resources */,
+				1FB9114B1912BAB200FEFFB8 /* Default-Landscape@2x.png in Resources */,
+				1F2230FE194A0D4D002A7F33 /* EFSingleSelectionView.xib in Resources */,
+				1F5539701909D8C4003881B5 /* EFVideoPreviewView~ipad.xib in Resources */,
+				1FEB066418DA343200821F2F /* Main_iPhone.storyboard in Resources */,
+				1FEB065B18DA343200821F2F /* InfoPlist.strings in Resources */,
+				1F2231121950A4A2002A7F33 /* EFPostingCompleteFailureView.xib in Resources */,
+				1F772BF018FC539700FDD5FE /* EFSettingsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB066F18DA343200821F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEB067D18DA343300821F2F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FEB064918DA343200821F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F223107194B63CA002A7F33 /* EFDrawerViewController.m in Sources */,
+				1F2230FC194A0D3A002A7F33 /* EFSingleSelectionView.m in Sources */,
+				1F772B0318E1F64500FDD5FE /* NSString+EFExtensions.m in Sources */,
+				1F5A910218DB945B000BD73F /* EFUploadManager.m in Sources */,
+				1F40A856192A7B7200D6C364 /* UIColor+EFExtensions.m in Sources */,
+				1F772B5018E6433600FDD5FE /* EFNetworkRequest.m in Sources */,
+				1F772B4B18E6430E00FDD5FE /* EFAPIClient.m in Sources */,
+				1F22311E19523F91002A7F33 /* EFLinkAction.m in Sources */,
+				1F772B8B18EC7EAA00FDD5FE /* EFSettingsCell.m in Sources */,
+				1F772B1318E2569400FDD5FE /* EFSemiTransparentModalView.m in Sources */,
+				1FEB066A18DA343200821F2F /* EFRootViewController.m in Sources */,
+				1F40A84E1926A8E900D6C364 /* EFOnboardingManager.m in Sources */,
+				1F772AFB18E1E92300FDD5FE /* EFTwitterManager.m in Sources */,
+				1F772B0918E1FB6800FDD5FE /* NSData+EFExtensions.m in Sources */,
+				1FB91133190EF02B00FEFFB8 /* EFWebViewController.m in Sources */,
+				1FB91120190AD5D300FEFFB8 /* EFTouchThroughView.m in Sources */,
+				1F772BC818F4AB1600FDD5FE /* EFVideoDetailCell.m in Sources */,
+				1F772BFB18FF038400FDD5FE /* EFPostingCompleteView.m in Sources */,
+				1F55396519097D98003881B5 /* EFVideoPreviewCollectionViewCell.m in Sources */,
+				1F772B1E18E3392D00FDD5FE /* EFSemiTransparentModalViewController.m in Sources */,
+				1F772B6C18E9FF2A00FDD5FE /* EFCachedManager.m in Sources */,
+				1F40A853192A71D300D6C364 /* EFOnboardingView.m in Sources */,
+				1F772BC118F49B5400FDD5FE /* EFVideoDetailViewController.m in Sources */,
+				1F772B5918E6487D00FDD5FE /* UIAlertView+EFExtensions.m in Sources */,
+				1FB9120A191D523500FEFFB8 /* EFLoadingView.m in Sources */,
+				1F772AD718DCA94400FDD5FE /* EFKeychainStorage.m in Sources */,
+				1F772B0018E1F01400FDD5FE /* EFTwitterRequest.m in Sources */,
+				1F772BD118F4B21400FDD5FE /* EFVideoRowCell.m in Sources */,
+				1F772B1A18E3343D00FDD5FE /* EFMoreSelectionCell.m in Sources */,
+				1F772B5618E6483800FDD5FE /* NSDictionary+EFExtensions.m in Sources */,
+				1F2230C4193FB51F002A7F33 /* EFImage.m in Sources */,
+				1F772ADB18DCAAB500FDD5FE /* EFUser.m in Sources */,
+				1F772B1718E332D700FDD5FE /* EFSingleSelectionCell.m in Sources */,
+				1F2230B1193D3114002A7F33 /* EFReturnAction.m in Sources */,
+				1F772C1019009AE800FDD5FE /* EFTimeTrackingView.m in Sources */,
+				1F5539461905C3E3003881B5 /* EFTimeFillLayer.m in Sources */,
+				1F40A8E41936913B00D6C364 /* EFProtocolAction.m in Sources */,
+				1F55395B190975B0003881B5 /* EFVideoPreviewView.m in Sources */,
+				1F772AE718DCBD6200FDD5FE /* EFSettingsViewController.m in Sources */,
+				1FEB06AA18DA4CA800821F2F /* EFRecordFilterPipeline.m in Sources */,
+				1F772BD718F4B76400FDD5FE /* EFLocationManager.m in Sources */,
+				1F772BEE18FC47E700FDD5FE /* EFShareVideoViewController.m in Sources */,
+				1F55394E1907147F003881B5 /* EFZoomView.m in Sources */,
+				1F772BD218F4B21400FDD5FE /* EFVideosViewController.m in Sources */,
+				1F772B6718E9FEB200FDD5FE /* EFSettingsManager.m in Sources */,
+				1F772B3B18E4930300FDD5FE /* EFMediaManager.m in Sources */,
+				1FB91130190ED4E500FEFFB8 /* EFTermsAndConditionsViewController.m in Sources */,
+				1F9C8E7F1958EF480065483C /* NSRegularExpression+EFExtension.m in Sources */,
+				1F772B9818EE143900FDD5FE /* EFSettingsSelectionCell.m in Sources */,
+				1F772B8518EC646200FDD5FE /* UIViewController+EFExtensions.m in Sources */,
+				1FB9121D19241AE300FEFFB8 /* EFSendVideoViewController.m in Sources */,
+				1F772C081900455700FDD5FE /* EFTimeSliderView.m in Sources */,
+				1F772B2418E33AC400FDD5FE /* UIStoryboard+EFExtensions.m in Sources */,
+				1F40A8E71936932E00D6C364 /* EFLaunchPageAction.m in Sources */,
+				1F5A910B18DB9AAB000BD73F /* UIApplication+EFExtensions.m in Sources */,
+				1F40A8E11936902400D6C364 /* EFProtocolLauncher.m in Sources */,
+				1F772BE118F8695E00FDD5FE /* EFWindowPresenter.m in Sources */,
+				1F772BD018F4B21400FDD5FE /* EFVideoDateHeaderView.m in Sources */,
+				1F5A911418DBA0E7000BD73F /* EFVideoUploadGroup.m in Sources */,
+				1F40A8CA193503C600D6C364 /* EFExploreViewController.m in Sources */,
+				1F2230C7193FCEAC002A7F33 /* UIImage+EFExtensions.m in Sources */,
+				1F2230F41948DE94002A7F33 /* EFShareVideoCollectionViewCell.m in Sources */,
+				1FEB065D18DA343200821F2F /* main.m in Sources */,
+				1F772B7018EA207F00FDD5FE /* EFCachingManager.m in Sources */,
+				1F772B2F18E37A3D00FDD5FE /* EFCameraManager.m in Sources */,
+				1F772AEA18DCDFA800FDD5FE /* NSFileManager+EFExtensions.m in Sources */,
+				1F5A910E18DB9AF1000BD73F /* NSDate+EFExtensions.m in Sources */,
+				1FEB066118DA343200821F2F /* EFAppDelegate.m in Sources */,
+				1F40A8BA192EA24400D6C364 /* EFRotationView.m in Sources */,
+				1F772B9118ECCA8400FDD5FE /* EFSettingsHeaderCell.m in Sources */,
+				1F2230F91948F8F1002A7F33 /* EFCenteredCollectionViewFlowLayout.m in Sources */,
+				1F5A910618DB96C0000BD73F /* EFReachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB066D18DA343200821F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEB067F18DA343300821F2F /* Tap_ClipsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FEB067718DA343200821F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FEB064C18DA343200821F2F /* TapClips */;
+			targetProxy = 1FEB067618DA343200821F2F /* PBXContainerItemProxy */;
+		};
+		1FEB069D18DA389E00821F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = 1FEB069C18DA389E00821F2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FEB065918DA343200821F2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEB065A18DA343200821F2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FEB066218DA343200821F2F /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEB066318DA343200821F2F /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1FEB066518DA343200821F2F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEB066618DA343200821F2F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		1FEB067B18DA343300821F2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FEB067C18DA343300821F2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FEB068018DA343300821F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FEB068118DA343300821F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FEB068318DA343300821F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_SUFFIX = .debug;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shree Madhavapeddi (P8S4484285)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/matthewfay/Downloads/aws-ios-sdk-1.7.1",
+					/Users/matthewfay/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tap Clips/TapClips-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"GPUImage/framework/**",
+				);
+				INFOPLIST_FILE = "Tap Clips/TapClips-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tap\\ Clips/TestFlightSDK3.0.0",
+					"$(PROJECT_DIR)/Flurry",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TapClips;
+				PROVISIONING_PROFILE = "1FA58F5A-93DE-444C-B4E4-D133E7B5F9B1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FEB068418DA343300821F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_SUFFIX = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shree Madhavapeddi (P8S4484285)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/matthewfay/Downloads/aws-ios-sdk-1.7.1",
+					/Users/matthewfay/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tap Clips/TapClips-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"GPUImage/framework/**",
+				);
+				INFOPLIST_FILE = "Tap Clips/TapClips-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tap\\ Clips/TestFlightSDK3.0.0",
+					"$(PROJECT_DIR)/Flurry",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TapClips;
+				PROVISIONING_PROFILE = "F75A698D-EB43-43B3-9E63-8364F20A9279";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1FEB068618DA343300821F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tap Clips.app/Tap Clips";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tap Clips/Tap Clips-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tap ClipsTests/TapClipsTests-Info.plist";
+				PRODUCT_NAME = TapClipsTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1FEB068718DA343300821F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tap Clips.app/Tap Clips";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tap Clips/Tap Clips-Prefix.pch";
+				INFOPLIST_FILE = "Tap ClipsTests/TapClipsTests-Info.plist";
+				PRODUCT_NAME = TapClipsTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FEB064818DA343200821F2F /* Build configuration list for PBXProject "TapClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEB068018DA343300821F2F /* Debug */,
+				1FEB068118DA343300821F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEB068218DA343300821F2F /* Build configuration list for PBXNativeTarget "TapClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEB068318DA343300821F2F /* Debug */,
+				1FEB068418DA343300821F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEB068518DA343300821F2F /* Build configuration list for PBXNativeTarget "TapClipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEB068618DA343300821F2F /* Debug */,
+				1FEB068718DA343300821F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FEB064518DA343200821F2F /* Project object */;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>13F3A8A6-3B67-455E-9781-4B747D41EE36</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tap Clips</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>52115FE5-0BC1-41F7-B6CD-8CE012FEF574</key>
+		<string>ssh://bitbucket.org/elementalfoundry/main.git</string>
+		<key>DCD6E3CF-B4D2-49F8-A5FF-D05DA5BC3390</key>
+		<string>https://github.com/BradLarson/GPUImage.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS application/Tap Clips/Tap Clips.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>52115FE5-0BC1-41F7-B6CD-8CE012FEF574</key>
+		<string>../../../..</string>
+		<key>DCD6E3CF-B4D2-49F8-A5FF-D05DA5BC3390</key>
+		<string>../../GPUImage</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/elementalfoundry/main.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>52115FE5-0BC1-41F7-B6CD-8CE012FEF574</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DCD6E3CF-B4D2-49F8-A5FF-D05DA5BC3390</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GPUImage</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>52115FE5-0BC1-41F7-B6CD-8CE012FEF574</string>
+			<key>IDESourceControlWCCName</key>
+			<string>main</string>
+		</dict>
+	</array>
+</dict>
+</plist>

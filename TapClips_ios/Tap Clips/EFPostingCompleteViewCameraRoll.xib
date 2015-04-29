@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="eUF-sp-dwV" customClass="EFPostingCompleteView">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-logo" translatesAutoresizingMaskIntoConstraints="NO" id="P0R-FI-MYG">
+                    <rect key="frame" x="10" y="10" width="160" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved to Camera Roll" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="L2W-ef-a1D">
+                    <rect key="frame" x="10" y="70" width="160" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.45000000000000001" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.22352941179999999" green="0.58039215690000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="P0R-FI-MYG" firstAttribute="leading" secondItem="eUF-sp-dwV" secondAttribute="leading" constant="10" id="1HQ-VD-dT0"/>
+                <constraint firstItem="P0R-FI-MYG" firstAttribute="top" secondItem="eUF-sp-dwV" secondAttribute="top" constant="10" id="NA6-WL-qaP"/>
+                <constraint firstAttribute="trailing" secondItem="L2W-ef-a1D" secondAttribute="trailing" constant="10" id="PQh-Lr-PZl"/>
+                <constraint firstItem="L2W-ef-a1D" firstAttribute="top" secondItem="P0R-FI-MYG" secondAttribute="bottom" id="Ra9-wC-jfa"/>
+                <constraint firstItem="L2W-ef-a1D" firstAttribute="height" secondItem="P0R-FI-MYG" secondAttribute="height" id="fib-F8-Mjm"/>
+                <constraint firstAttribute="trailing" secondItem="P0R-FI-MYG" secondAttribute="trailing" constant="10" id="gxU-Ee-MgK"/>
+                <constraint firstAttribute="bottom" secondItem="L2W-ef-a1D" secondAttribute="bottom" constant="10" id="iYR-aU-dvN"/>
+                <constraint firstItem="L2W-ef-a1D" firstAttribute="leading" secondItem="eUF-sp-dwV" secondAttribute="leading" constant="10" id="jhD-fg-ZW6"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-logo" width="60" height="60"/>
+    </resources>
+</document>
